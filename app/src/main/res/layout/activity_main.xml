@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="indicatorLineScrollMode = dynamic模式
+             pagerIndicatorMode = scrollable_center模式"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <com.kcrason.dynamicpagerindicatorlibrary.DynamicPagerIndicator
+            android:id="@+id/dynamic_pager_indicator1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:indicatorLineScrollMode="dynamic"
+            app:pagerIndicatorMode="scrollable_center"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager1"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="indicatorLineScrollMode = dynamic模式
+             pagerIndicatorMode = scrollable模式"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <com.kcrason.dynamicpagerindicatorlibrary.DynamicPagerIndicator
+            android:id="@+id/dynamic_pager_indicator2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:indicatorLineEndColor="@color/colorPrimary"
+            app:indicatorLineScrollMode="dynamic"
+            app:indicatorLineStartColor="@color/colorAccent"
+            app:pagerIndicatorMode="scrollable"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager2"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="indicatorLineScrollMode = dynamic模式
+             pagerIndicatorMode = fixed模式"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <com.kcrason.dynamicpagerindicatorlibrary.DynamicPagerIndicator
+            android:id="@+id/dynamic_pager_indicator3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:indicatorLineScrollMode="dynamic"
+            app:pagerIndicatorMode="fixed"
+            app:tabNormalTextSize="14sp"
+            app:tabSelectedTextSize="18sp"
+            />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager3"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="indicatorLineScrollMode = transform模式
+             pagerIndicatorMode = fixed模式"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+
+        <com.kcrason.dynamicpagerindicatorlibrary.DynamicPagerIndicator
+            android:id="@+id/dynamic_pager_indicator4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:indicatorLineScrollMode="transform"
+            app:pagerIndicatorMode="fixed"
+            app:tabNormalTextColor="@android:color/darker_gray"
+            app:tabSelectedTextColor="@android:color/holo_red_dark"
+            />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager4"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="自定义PagerIndicator和PagerTabView:
+            indicatorLineScrollMode = dynamic模式
+             pagerIndicatorMode = fixed模式"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+
+        <com.kcrason.dynamicpagerindicator.CustomPagerIndicator
+            android:id="@+id/dynamic_pager_indicator5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:indicatorLineHeight="20dp"
+            app:indicatorLineRadius="8dip"
+            app:indicatorLineScrollMode="dynamic"
+            app:pagerIndicatorMode="fixed"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager5"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="自定义PagerIndicator和PagerTabView:
+            indicatorLineScrollMode = transform模式
+            pagerIndicatorMode = fixed模式"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <com.kcrason.dynamicpagerindicator.CustomPagerIndicator
+            android:id="@+id/dynamic_pager_indicator6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:indicatorLineScrollMode="transform"
+            app:indicatorLineWidth="0dp"
+            app:pagerIndicatorMode="fixed"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager6"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            />
+    </LinearLayout>
+</ScrollView>
